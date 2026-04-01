@@ -1,0 +1,24 @@
+# OPTIONAL — only needed if you want to run Ollama in Docker instead of natively.
+# Usage: docker compose up -d
+#
+# For most setups, just install Ollama natively: https://ollama.com
+# ChromaDB runs embedded in Python — no Docker needed.
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "${OLLAMA_PORT:-11434}:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
