@@ -14,8 +14,6 @@ Zero-budget, production-grade Retrieval-Augmented Generation system built entire
 - **Streaming**: Server-Sent Events for real-time response generation
 - **Frontend**: Streamlit multi-page app (chat, documents, settings, evaluation)
 
-> For detailed architecture, component-by-component explanations, and interview preparation, see **[ARCHITECTURE.md](./ARCHITECTURE.md)**.
-
 ## Prerequisites
 
 - **Python 3.11+**
