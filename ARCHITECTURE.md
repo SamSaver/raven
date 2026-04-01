@@ -1,6 +1,6 @@
 # Raven RAG - Architecture & Technical Deep Dive
 
-This document explains every component of the Raven RAG system in detail: how they work, why they were chosen, how they connect, and the trade-offs involved. Use this for interview preparation.
+This document explains every component of the Raven RAG system in detail: how they work, why they were chosen, how they connect, and the trade-offs involved. 
 
 ---
 
